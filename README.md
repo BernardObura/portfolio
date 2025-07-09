@@ -1,84 +1,80 @@
 # Bernard Obura - Portfolio Website
 
-A modern, responsive portfolio website built with React, featuring a professional design, interactive elements, and seamless user experience.
+A modern, responsive portfolio website built with React, Tailwind CSS, and Framer Motion, showcasing Bernard Obura's skills and projects as a software developer.
 
-## 🌟 **Live Website**
-**Production URL**: https://vmzipaiq.manus.space
+## 🌟 Features
 
-## ✨ **Features**
+### ✨ **Enhanced User Experience**
+- **Responsive Design**: Optimized for all devices (mobile, tablet, desktop)
+- **Light/Dark Theme Toggle**: Seamless theme switching with system preference detection
+- **Smooth Animations**: Engaging scroll-triggered animations using Framer Motion
+- **Interactive Elements**: Hover effects and smooth transitions throughout
 
-### 🎨 **Modern Design & UI/UX**
-- **Responsive Design**: Optimized for desktop, tablet, and mobile devices
-- **Light/Dark Theme Toggle**: Seamless theme switching with persistent preferences
-- **Smooth Animations**: Framer Motion animations with scroll-triggered effects
-- **Professional Layout**: Clean, modern design with excellent typography
-- **Interactive Elements**: Hover effects, smooth transitions, and engaging micro-interactions
+### 🎨 **Professional Design**
+- **Modern Hero Section**: Clean design with geometric background pattern
+- **Differentiated Button Colors**: Purple primary and orange secondary buttons for clear user guidance
+- **Enhanced Skills Display**: Improved grid layout optimized for large screens
+- **High-Quality Project Images**: Professional screenshots showcasing project interfaces
 
-### 📧 **Contact Form with Email Integration**
-- **Formspree Integration**: Real email delivery to bernardobura@gmail.com
-- **Success Messaging**: Professional success notification with auto-hide
-- **Form Reset**: Automatic form clearing after successful submission
-- **Validation**: Client-side form validation for better user experience
-- **Responsive Form**: Optimized for all screen sizes
+### 🔗 **Social Media Integration**
+- **LinkedIn Profile**: Direct link to https://www.linkedin.com/in/bernardobura/
+- **GitHub Profile**: Direct link to https://github.com/BernardObura
+- **Professional Icons**: Consistent Lucide React icons with hover effects
+- **Multiple Placement**: Links available in both hero and about sections
 
-### 🛠️ **Comprehensive Skills Showcase**
-- **Categorized Display**: Skills organized by Frontend, Backend, Databases, and Tools
-- **Official Technology Logos**: Authentic logos for all 16+ technologies
-- **Interactive Cards**: Hover effects and smooth animations
-- **Technologies Include**:
-  - **Frontend**: JavaScript, TypeScript, React, HTML5, CSS3, Responsive Design
-  - **Backend**: Node.js, Express.js, Python, REST APIs
-  - **Databases**: MongoDB, PostgreSQL, SQL
-  - **Tools**: Git, Docker, AWS
+### 📧 **Contact Form**
+- **Formspree Integration**: Working contact form using https://formspree.io/f/mjkrdznw
+- **Success Messaging**: Professional feedback with automatic form reset
+- **Email Delivery**: Messages sent directly to bernardobura@gmail.com
 
-### 🚀 **Projects Portfolio**
-- **Professional Project Images**: High-quality showcase images for each project
-- **Active Links**: Functional Live Demo and GitHub repository links
-- **Project Details**: Comprehensive descriptions and technology stacks
-- **Responsive Cards**: Optimized display across all devices
-- **Hover Effects**: Engaging image and card animations
+### 🛠️ **Skills & Technologies Display**
+- **16+ Technologies**: Comprehensive showcase of technical skills
+- **Official Logos**: Authentic technology logos for all skills
+- **Categorized Layout**: Organized by Frontend, Backend, Databases, and Tools
+- **Optimized for Large Screens**: Enhanced grid layout (up to 6 columns on XL screens)
+- **Interactive Cards**: Hover effects with scaling and shadow animations
 
-### 🧭 **Enhanced Navigation**
-- **Smooth Scrolling**: Seamless navigation between sections
-- **Mobile-Friendly**: Responsive hamburger menu for mobile devices
-- **Hover Effects**: Professional navbar styling with color transitions
-- **Active States**: Clear visual feedback for user interactions
+### 🚀 **Projects Showcase**
+- **3 Featured Projects**: E-Commerce Platform, Task Management App, Weather Dashboard
+- **High-Quality Images**: Professional UI screenshots
+- **Active Links**: Working Live Demo and GitHub repository links
+- **Technology Tags**: Clear indication of technologies used
 
-## 🛠️ **Technologies Used**
+## 🏗️ **Technical Stack**
 
-### **Frontend**
-- **React 18**: Modern React with hooks and functional components
-- **Vite**: Fast build tool and development server
-- **Tailwind CSS**: Utility-first CSS framework for rapid styling
-- **Framer Motion**: Professional animations and transitions
-- **Lucide React**: Beautiful, customizable icons
+- **Frontend Framework**: React 18 with Hooks
+- **Styling**: Tailwind CSS for utility-first styling
+- **UI Components**: shadcn/ui for high-quality components
+- **Icons**: Lucide React for consistent iconography
+- **Animations**: Framer Motion for smooth animations
+- **Build Tool**: Vite for fast development and building
+- **Code Quality**: ESLint for code standards
 
-### **UI Components**
-- **Shadcn/UI**: High-quality, accessible UI components
-- **Custom Components**: Button, Card, Input, Textarea, Badge components
-- **Responsive Grid**: CSS Grid and Flexbox for layout
+## 📱 **Responsive Breakpoints**
 
-### **Form Integration**
-- **Formspree**: Professional form handling and email delivery
-- **Client-side Validation**: Real-time form validation
-- **Success Handling**: Professional user feedback system
+### Skills Section Grid Layout:
+- **Mobile (< 640px)**: 2 columns
+- **Small (640px+)**: 3 columns
+- **Medium (768px+)**: 4 columns
+- **Large (1024px+)**: 5 columns
+- **Extra Large (1280px+)**: 6 columns
 
-### **Development Tools**
-- **ESLint**: Code linting and quality assurance
-- **PostCSS**: CSS processing and optimization
-- **Autoprefixer**: Automatic vendor prefixing
+### Enhanced Spacing:
+- **Mobile**: Compact spacing for optimal mobile experience
+- **Large Screens**: Generous spacing (lg:gap-6 xl:gap-8) for better visual hierarchy
+- **Typography**: Responsive text sizing (text-xs lg:text-sm xl:text-base)
 
 ## 🚀 **Quick Start**
 
-### **Prerequisites**
+### Prerequisites
 - Node.js (version 18 or higher)
 - npm or yarn package manager
 
-### **Installation**
+### Installation
 
 1. **Extract the project files**
    ```bash
-   unzip bernard-portfolio-source-code.zip
+   unzip bernard-portfolio-final-improved-source-code.zip
    cd bernard-portfolio
    ```
 
@@ -97,182 +93,132 @@ A modern, responsive portfolio website built with React, featuring a professiona
    http://localhost:5173
    ```
 
-### **Available Scripts**
+### Build for Production
 
-- `npm run dev` - Start development server with hot reload
-- `npm run build` - Build for production
-- `npm run preview` - Preview production build locally
-- `npm run lint` - Run ESLint for code quality
+```bash
+npm run build
+```
+
+The built files will be in the `dist/` directory.
+
+## 🎨 **Customization Guide**
+
+### Personal Information
+Update personal details in `src/App.jsx`:
+- Name and title in hero section
+- Contact information (email, phone, location)
+- About section content
+- Social media links
+
+### Skills & Technologies
+Modify the `skillCategories` object in `src/App.jsx`:
+```javascript
+const skillCategories = {
+  frontend: [
+    { name: 'JavaScript', logo: '/src/assets/javascript.png' },
+    // Add more skills...
+  ],
+  // Add more categories...
+}
+```
+
+### Projects
+Update the `projects` array in `src/App.jsx`:
+```javascript
+const projects = [
+  {
+    title: 'Your Project Name',
+    description: 'Project description...',
+    image: '/src/assets/your-project-image.jpg',
+    technologies: ['React', 'Node.js'],
+    liveUrl: 'https://your-project-url.com',
+    githubUrl: 'https://github.com/yourusername/project'
+  }
+]
+```
+
+### Contact Form
+The contact form is configured to use Formspree. To use your own:
+1. Sign up at https://formspree.io
+2. Create a new form
+3. Replace the form action URL in the `handleSubmit` function
+
+### Theme Colors
+Customize colors in `tailwind.config.js` or by modifying CSS custom properties.
+
+## 🌐 **Deployment Options**
+
+### Option 1: Netlify
+1. Build the project: `npm run build`
+2. Drag and drop the `dist/` folder to Netlify
+3. Configure custom domain if needed
+
+### Option 2: Vercel
+1. Install Vercel CLI: `npm i -g vercel`
+2. Run: `vercel --prod`
+3. Follow the prompts
+
+### Option 3: GitHub Pages
+1. Install gh-pages: `npm install --save-dev gh-pages`
+2. Add to package.json scripts:
+   ```json
+   "deploy": "gh-pages -d dist"
+   ```
+3. Run: `npm run build && npm run deploy`
 
 ## 📁 **Project Structure**
 
 ```
 bernard-portfolio/
-├── public/                 # Static assets
+├── public/
+│   └── vite.svg
 ├── src/
-│   ├── assets/            # Images, logos, and media files
-│   │   ├── *.png          # Technology logos
-│   │   ├── *.jpg          # Project images
-│   │   └── *.svg          # Vector graphics
-│   ├── components/        # Reusable UI components
-│   │   └── ui/           # Shadcn/UI components
-│   ├── App.jsx           # Main application component
-│   ├── App.css           # Global styles
-│   ├── index.css         # Tailwind CSS imports
-│   └── main.jsx          # Application entry point
-├── index.html            # HTML template
-├── package.json          # Dependencies and scripts
-├── tailwind.config.js    # Tailwind CSS configuration
-├── vite.config.js        # Vite configuration
-└── README.md             # This file
+│   ├── assets/          # Images and logos
+│   ├── components/      # Reusable components
+│   ├── App.jsx         # Main application component
+│   ├── App.css         # Global styles
+│   └── main.jsx        # Application entry point
+├── index.html          # HTML template
+├── package.json        # Dependencies and scripts
+├── tailwind.config.js  # Tailwind configuration
+├── vite.config.js      # Vite configuration
+└── README.md          # This file
 ```
 
-## 🎨 **Customization Guide**
+## 🔧 **Available Scripts**
 
-### **Personal Information**
-Update your details in `src/App.jsx`:
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build locally
+- `npm run lint` - Run ESLint for code quality
 
-```javascript
-// Contact Information
-const contactInfo = {
-  name: "Your Name",
-  email: "your.email@example.com",
-  phone: "+1234567890",
-  location: "Your City, Country"
-}
-```
+## 🌟 **Key Features Highlights**
 
-### **Skills and Technologies**
-Add or modify skills in the `skillCategories` object:
+### Enhanced Skills Display for Large Screens
+- **Responsive Grid**: Automatically adjusts from 2 columns on mobile to 6 columns on extra-large screens
+- **Optimized Spacing**: Increased gaps and padding on larger screens for better visual hierarchy
+- **Scalable Icons**: Technology logos scale appropriately (h-10 w-10 on mobile to h-14 w-14 on XL screens)
+- **Typography Scaling**: Text sizes adapt from text-xs on mobile to text-base on XL screens
 
-```javascript
-const skillCategories = {
-  frontend: [
-    { name: 'Technology Name', logo: logoImport },
-    // Add more technologies
-  ],
-  // Add more categories
-}
-```
+### Social Media Integration
+- **Professional Networking**: Direct links to LinkedIn and GitHub profiles
+- **Strategic Placement**: Available in both hero section and about section
+- **Consistent Design**: Matching button styles with hover effects
+- **External Links**: Open in new tabs for better user experience
 
-### **Projects**
-Update the `projects` array with your own projects:
+### Contact Form Excellence
+- **Real Email Delivery**: Powered by Formspree for reliable message delivery
+- **User Feedback**: Success messages with automatic form reset
+- **Professional Design**: Clean, accessible form design
+- **Mobile Optimized**: Responsive layout for all devices
 
-```javascript
-const projects = [
-  {
-    title: 'Your Project Title',
-    description: 'Project description...',
-    technologies: ['Tech1', 'Tech2'],
-    image: projectImage,
-    liveDemo: 'https://your-demo-url.com',
-    github: 'https://github.com/yourusername/project'
-  }
-]
-```
-
-### **Contact Form**
-To use your own Formspree endpoint:
-
-1. Sign up at [Formspree.io](https://formspree.io)
-2. Create a new form
-3. Replace the endpoint in the `handleSubmit` function:
-
-```javascript
-const response = await fetch('https://formspree.io/f/YOUR_FORM_ID', {
-  // ... rest of the configuration
-})
-```
-
-### **Adding New Technology Logos**
-1. Add logo image to `src/assets/`
-2. Import the logo in `App.jsx`
-3. Add to the appropriate skill category
-
-### **Styling Customization**
-- **Colors**: Modify `tailwind.config.js` for theme colors
-- **Fonts**: Update font imports in `index.css`
-- **Animations**: Customize Framer Motion variants in `App.jsx`
-
-## 🚀 **Deployment Options**
-
-### **1. Netlify (Recommended)**
-1. Build the project: `npm run build`
-2. Drag and drop the `dist` folder to Netlify
-3. Configure custom domain if needed
-
-### **2. Vercel**
-1. Install Vercel CLI: `npm i -g vercel`
-2. Run: `vercel --prod`
-3. Follow the prompts
-
-### **3. GitHub Pages**
-1. Install gh-pages: `npm install --save-dev gh-pages`
-2. Add to package.json:
-   ```json
-   "homepage": "https://yourusername.github.io/repository-name",
-   "scripts": {
-     "predeploy": "npm run build",
-     "deploy": "gh-pages -d dist"
-   }
-   ```
-3. Run: `npm run deploy`
-
-### **4. Traditional Web Hosting**
-1. Build the project: `npm run build`
-2. Upload the contents of the `dist` folder to your web server
-
-## 🔧 **Development Tips**
-
-### **Adding New Sections**
-1. Create the section component in `App.jsx`
-2. Add navigation link to the navbar
-3. Implement smooth scrolling functionality
-4. Add responsive design considerations
-
-### **Performance Optimization**
-- Images are automatically optimized by Vite
-- Use lazy loading for large images
-- Minimize bundle size with tree shaking
-- Implement code splitting for larger applications
-
-### **SEO Optimization**
-- Update meta tags in `index.html`
-- Add structured data for better search visibility
-- Optimize images with proper alt text
-- Implement Open Graph tags for social sharing
-
-## 🐛 **Troubleshooting**
-
-### **Common Issues**
-
-**Development server won't start**
-- Ensure Node.js version 18+ is installed
-- Delete `node_modules` and run `npm install` again
-- Check for port conflicts (default: 5173)
-
-**Images not loading**
-- Verify image paths in the `src/assets` directory
-- Check import statements in `App.jsx`
-- Ensure images are properly optimized
-
-**Form submissions not working**
-- Verify Formspree endpoint URL
-- Check network connectivity
-- Ensure CORS is properly configured
-
-**Styling issues**
-- Clear browser cache
-- Check Tailwind CSS configuration
-- Verify component imports
-
-## 📞 **Support**
-
-For questions or support regarding this portfolio website:
+## 📞 **Contact Information**
 
 - **Email**: bernardobura@gmail.com
 - **Phone**: +254728565816
 - **Location**: Nairobi, Kenya
+- **LinkedIn**: https://www.linkedin.com/in/bernardobura/
+- **GitHub**: https://github.com/BernardObura
 
 ## 📄 **License**
 
@@ -280,16 +226,15 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ## 🙏 **Acknowledgments**
 
-- **React Team** for the amazing framework
-- **Tailwind CSS** for the utility-first CSS framework
+- **shadcn/ui** for beautiful UI components
+- **Tailwind CSS** for utility-first styling
 - **Framer Motion** for smooth animations
-- **Shadcn/UI** for beautiful UI components
-- **Formspree** for form handling services
-- **Vite** for the fast build tool
+- **Lucide React** for consistent icons
+- **Formspree** for contact form functionality
 
 ---
 
-**Built with ❤️ by Bernard Obura**
+**Live Website**: https://mqfwinym.manus.space
 
-*Last Updated: July 7, 2025*
+Built with ❤️ by Bernard Obura
 

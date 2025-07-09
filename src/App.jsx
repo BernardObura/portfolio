@@ -26,9 +26,9 @@ import postgresqlLogo from './assets/postgresql.png'
 import expressjsLogo from './assets/expressjs.png'
 
 // Import project images
-import ecommerceImage from './assets/ecommerce.jpg'
-import taskManagementImage from './assets/task_management.png'
-import weatherDashboardImage from './assets/weather_dashboard.png'
+import ecommerceImage from './assets/ecommerce_new.jpg'
+import taskManagementImage from './assets/task_management_new.png'
+import weatherDashboardImage from './assets/weather_dashboard_new.png'
 
 function App() {
   const [isDark, setIsDark] = useState(false)
@@ -190,25 +190,27 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex-shrink-0">
-              <h1 className="text-xl font-bold text-primary">Bernard Obura</h1>
+              <button onClick={() => scrollToSection('home')} className="text-xl font-bold text-primary focus:outline-none cursor-pointer">
+                Bernard Obura
+              </button>
             </div>
             
             {/* Desktop Navigation */}
             <div className="hidden md:block">
               <div className="ml-10 flex items-baseline space-x-4">
-                <button onClick={() => scrollToSection('home')} className="text-foreground hover:text-primary hover:bg-primary/10 transition-all duration-300 px-3 py-2 rounded-md text-sm font-medium">
+                <button onClick={() => scrollToSection('home')} className="text-foreground hover:text-primary hover:bg-primary/10 transition-all duration-300 px-3 py-2 rounded-md text-sm font-medium cursor-pointer">
                   Home
                 </button>
-                <button onClick={() => scrollToSection('about')} className="text-foreground hover:text-primary hover:bg-primary/10 transition-all duration-300 px-3 py-2 rounded-md text-sm font-medium">
+                <button onClick={() => scrollToSection('about')} className="text-foreground hover:text-primary hover:bg-primary/10 transition-all duration-300 px-3 py-2 rounded-md text-sm font-medium cursor-pointer">
                   About
                 </button>
-                <button onClick={() => scrollToSection('skills')} className="text-foreground hover:text-primary hover:bg-primary/10 transition-all duration-300 px-3 py-2 rounded-md text-sm font-medium">
+                <button onClick={() => scrollToSection('skills')} className="text-foreground hover:text-primary hover:bg-primary/10 transition-all duration-300 px-3 py-2 rounded-md text-sm font-medium cursor-pointer">
                   Skills
                 </button>
-                <button onClick={() => scrollToSection('projects')} className="text-foreground hover:text-primary hover:bg-primary/10 transition-all duration-300 px-3 py-2 rounded-md text-sm font-medium">
+                <button onClick={() => scrollToSection('projects')} className="text-foreground hover:text-primary hover:bg-primary/10 transition-all duration-300 px-3 py-2 rounded-md text-sm font-medium cursor-pointer">
                   Projects
                 </button>
-                <button onClick={() => scrollToSection('contact')} className="text-foreground hover:text-primary hover:bg-primary/10 transition-all duration-300 px-3 py-2 rounded-md text-sm font-medium">
+                <button onClick={() => scrollToSection('contact')} className="text-foreground hover:text-primary hover:bg-primary/10 transition-all duration-300 px-3 py-2 rounded-md text-sm font-medium cursor-pointer">
                   Contact
                 </button>
               </div>
@@ -220,7 +222,7 @@ function App() {
                 variant="ghost"
                 size="icon"
                 onClick={toggleTheme}
-                className="w-9 h-9"
+                className="w-9 h-9 cursor-pointer"
               >
                 {isDark ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
               </Button>
@@ -231,7 +233,7 @@ function App() {
                   variant="ghost"
                   size="icon"
                   onClick={toggleMenu}
-                  className="w-9 h-9"
+                  className="w-9 h-9 cursor-pointer"
                 >
                   {isMenuOpen ? <X className="h-4 w-4" /> : <Menu className="h-4 w-4" />}
                 </Button>
@@ -250,19 +252,19 @@ function App() {
             transition={{ duration: 0.3 }}
           >
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-background border-t border-border">
-              <button onClick={() => scrollToSection('home')} className="block px-3 py-2 rounded-md text-base font-medium w-full text-left text-foreground hover:text-primary hover:bg-primary/10 transition-all duration-300">
+              <button onClick={() => scrollToSection('home')} className="block px-3 py-2 rounded-md text-base font-medium w-full text-left text-foreground hover:text-primary hover:bg-primary/10 transition-all duration-300 cursor-pointer">
                 Home
               </button>
-              <button onClick={() => scrollToSection('about')} className="block px-3 py-2 rounded-md text-base font-medium w-full text-left text-foreground hover:text-primary hover:bg-primary/10 transition-all duration-300">
+              <button onClick={() => scrollToSection('about')} className="block px-3 py-2 rounded-md text-base font-medium w-full text-left text-foreground hover:text-primary hover:bg-primary/10 transition-all duration-300 cursor-pointer">
                 About
               </button>
-              <button onClick={() => scrollToSection('skills')} className="block px-3 py-2 rounded-md text-base font-medium w-full text-left text-foreground hover:text-primary hover:bg-primary/10 transition-all duration-300">
+              <button onClick={() => scrollToSection('skills')} className="block px-3 py-2 rounded-md text-base font-medium w-full text-left text-foreground hover:text-primary hover:bg-primary/10 transition-all duration-300 cursor-pointer">
                 Skills
               </button>
-              <button onClick={() => scrollToSection('projects')} className="block px-3 py-2 rounded-md text-base font-medium w-full text-left text-foreground hover:text-primary hover:bg-primary/10 transition-all duration-300">
+              <button onClick={() => scrollToSection('projects')} className="block px-3 py-2 rounded-md text-base font-medium w-full text-left text-foreground hover:text-primary hover:bg-primary/10 transition-all duration-300 cursor-pointer">
                 Projects
               </button>
-              <button onClick={() => scrollToSection('contact')} className="block px-3 py-2 rounded-md text-base font-medium w-full text-left text-foreground hover:text-primary hover:bg-primary/10 transition-all duration-300">
+              <button onClick={() => scrollToSection('contact')} className="block px-3 py-2 rounded-md text-base font-medium w-full text-left text-foreground hover:text-primary hover:bg-primary/10 transition-all duration-300 cursor-pointer">
                 Contact
               </button>
             </div>
@@ -271,7 +273,9 @@ function App() {
       </nav>
 
       {/* Hero Section */}
-      <section id="home" className="pt-24 min-h-screen flex items-center justify-center bg-gradient-to-br from-background to-muted">
+      <section id="home" className="pt-24 min-h-screen flex items-center justify-center relative overflow-hidden
+        bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-900 dark:to-gray-800
+        before:content-[''] before:absolute before:inset-0 before:bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiM5QzkyQUMiIGZpbGwtb3BhY2l0eT0iLjEiPjxwYXRoIGQ9Ik0zNiAzNHYtNGgtMnY0aC00djJoNHY0aDJ2LTRoNHYtMmgtNHptMC0zMFYwaC0ydjRoLTR2Mmg0djRoMlY2aDRWNGgtNHpNMiAxNnYtMmgydjJoNHYySDF2NGgtMnYtNEgwdi0yaDJ6bTM0IDB2LTJoMnYyaDR2MmgtNHY0aC0ydi00aC00di0yaDR6TTIgMzZ2LTJoMnYyaDR2Mkg0djRIMnYtNEgwdi0yaDJ6bTM0IDB2LTJoMnYyaDR2MmgtNHY0aC0ydi00aC00di0yaDR6TTE4IDJ2LTJoLTJ2MmgtdjJoNHY0aDJWNGg0VjJoLTR6TTE4IDIydi0yaC0ydjJoLTR2Mmg0djRoMnYtNGg0di0yaC00ek0xOCA0MnYtMmgtMnYyaC00djJoNHY0aDJ2LTRoNHYtMmgtNHpNMTggNjJ2LTJoLTJ2MmgtdjJoNHY0aDJ2LTRoNHYtMmgtNHpNNDIgMnYtMmgtMnYyaC00djJoNHY0aDJWNGg0VjJoLTR6TTQyIDIydi0yaC0ydjJoLTR2Mmg0djRoMnYtNGg0di0yaC00ek00MiA0MnYtMmgtMnYyaC00djJoNHY0aDJ2LTRoNHYtMmgtNHpNNDIgNjJ2LTJoLTJ2MmgtdjJoNHY0aDJ2LTRoNHYtMmgtNHpNMCA0di0yaDJ2Mmg0djJINHY0SDJWNkgwVjR6bTAgMjB2LTJoMnYyaDR2Mkg0djRIMnYtNEgwdi0yem0wIDIwdi0yaDJ2Mmg0djJINHY0SDJ2LTRIMHYtMnptMCAyMHYtMmgydjJoNHYySDF2NEgydi00SDB2LTIzem0yMCA0di0yaDJ2Mmg0djJoLTR2NGgtMlY2aC00VjRoNHptMCAyMHYtMmgydjJoLTR2Mmg0djRoMnYtNGg0di0yaC00em0yMCA0MnYtMmgydjJoLTR2Mmg0djRoMnYtNGg0di0yaC00em0yMCA2MnYtMmgydjJoLTR2Mmg0djRoMnYtNGg0di0yaC00em00MCA0di0yaDJ2Mmg0djJoLTR2NGgtMlY2aC00VjRoNHptMCAyMHYtMmgydjJoLTR2Mmg0djRoMnYtNGg0di0yaC00em00MCA0MnYtMmgydjJoLTR2Mmg0djRoMnYtNGg0di0yaC00em00MCA2MnYtMmgydjJoLTR2Mmg0djRoMnYtNGg0di0yaC00em0tMi02YTIgMiAwIDExMCA0IDIgMiAwIDAxMC00em0tMjAgMGEyIDIgMCAxMTAgNCAyIDIgMCAwMTAtNHptLTIwIDBhMiAyIDAgMTEwIDQgMiAyIDAgMDEwLTR6bS0yLTQwYTIgMiAwIDExMCA0IDIgMiAwIDAxMC00em0yMCAwYTIgMiAwIDExMCA0IDIgMiAwIDAxMC00em0yMCAwYTIgMiAwIDExMCA0IDIgMiAwIDAxMC00em0wIDBoMnYySDB6bTIwIDBoMnYySDB6bTIwIDBoMnYySDB6bS0yIDJhMiAyIDAgMTEwIDQgMiAyIDAgMDEwLTR6bS0yMCAwYTIgMiAwIDExMCA0IDIgMiAwIDAxMC00em0tMjAgMGEyIDIgMCAxMTAgNCAyIDIgMCAwMTAtNHpNMCAyMGgydjJIMFYyMHptMjAgMGgydjJIMFYyMHptMjAgMGgydjJIMFYyMHptLTIgMmEyIDIgMCAxMTAgNCAyIDIgMCAwMTAtNHptLTIwIDBhMiAyIDAgMTEwIDQgMiAyIDAgMDEwLTR6bS0yMCAwYTIgMiAwIDExMCA0IDIgMiAwIDAxMC00em0wIDQwaDJ2MkgwVjQwem0yMCA0MGgydjJIMFY0MHptMjAgMGgydjJIMFY0MHptLTIgMmEyIDIgMCAxMTAgNCAyIDIgMCAwMTAtNHptLTIwIDBhMiAyIDAgMTEwIDQgMiAyIDAgMDEwLTR6bS0yMCAwYTIgMiAwIDExMCA0IDIgMiAwIDAxMC00em0wIDYwaDJ2MkgwVjYwem0yMCA2MGgydjJIMFY2MHptMjAgNjBoMnYySDBWNjB6bS0yIDJhMiAyIDAgMTEwIDQgMiAyIDAgMDEwLTR6bS0yMCAwYTIgMiAwIDExMCA0IDIgMiAwIDAxMC00em0tMjAgMGEyIDIgMCAxMTAgNCAyIDIgMCAwMTAtNHoiLz4=')] before:opacity-5 before:dark:opacity-10 before:pointer-events-none">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
           <motion.div 
             className="space-y-8"
@@ -297,12 +301,27 @@ function App() {
               className="flex flex-col sm:flex-row gap-4 justify-center"
               variants={fadeInUp}
             >
-              <Button onClick={() => scrollToSection('projects')} size="lg" className="text-lg px-8 py-3 hover:scale-105 transition-transform duration-300">
+              <Button onClick={() => scrollToSection('projects')} size="lg" className="text-lg px-8 py-3 bg-primary text-primary-foreground hover:bg-primary/90 hover:scale-105 transition-transform duration-300 cursor-pointer">
                 View My Work
               </Button>
-              <Button onClick={() => scrollToSection('contact')} variant="outline" size="lg" className="text-lg px-8 py-3 hover:scale-105 transition-transform duration-300">
+              <Button onClick={() => scrollToSection('contact')} variant="outline" size="lg" className="text-lg px-8 py-3 border-primary text-primary hover:bg-primary/10 hover:scale-105 transition-transform duration-300 cursor-pointer">
                 Get In Touch
               </Button>
+            </motion.div>
+            <motion.div 
+              className="flex gap-4 justify-center mt-4"
+              variants={fadeInUp}
+            >
+              <a href="https://www.linkedin.com/in/bernardobura/" target="_blank" rel="noopener noreferrer">
+                <Button variant="ghost" size="icon" className="w-10 h-10 cursor-pointer">
+                  <Linkedin className="h-6 w-6" />
+                </Button>
+              </a>
+              <a href="https://github.com/BernardObura" target="_blank" rel="noopener noreferrer">
+                <Button variant="ghost" size="icon" className="w-10 h-10 cursor-pointer">
+                  <Github className="h-6 w-6" />
+                </Button>
+              </a>
             </motion.div>
           </motion.div>
         </div>
@@ -398,14 +417,18 @@ function App() {
                       I'm always open to discussing new opportunities, collaborating on interesting projects, or just having a chat about technology.
                     </p>
                     <div className="flex gap-4">
-                      <Button variant="outline" size="sm" className="hover:scale-105 transition-transform duration-300">
-                        <Github className="h-4 w-4 mr-2" />
-                        GitHub
-                      </Button>
-                      <Button variant="outline" size="sm" className="hover:scale-105 transition-transform duration-300">
-                        <Linkedin className="h-4 w-4 mr-2" />
-                        LinkedIn
-                      </Button>
+                      <a href="https://github.com/BernardObura" target="_blank" rel="noopener noreferrer">
+                        <Button variant="outline" size="sm" className="hover:scale-105 transition-transform duration-300 cursor-pointer">
+                          <Github className="h-4 w-4 mr-2" />
+                          GitHub
+                        </Button>
+                      </a>
+                      <a href="https://www.linkedin.com/in/bernardobura/" target="_blank" rel="noopener noreferrer">
+                        <Button variant="outline" size="sm" className="hover:scale-105 transition-transform duration-300 cursor-pointer">
+                          <Linkedin className="h-4 w-4 mr-2" />
+                          LinkedIn
+                        </Button>
+                      </a>
                     </div>
                   </CardContent>
                 </Card>
@@ -434,20 +457,20 @@ function App() {
           {Object.entries(skillCategories).map(([category, skills], categoryIndex) => (
             <motion.div 
               key={category} 
-              className="mb-12"
+              className="mb-8 lg:mb-12 xl:mb-16"
               initial="initial"
               whileInView="animate"
               viewport={{ once: true }}
               variants={staggerContainer}
             >
               <motion.h3 
-                className="text-2xl font-bold text-center mb-8 capitalize"
+                className="text-xl lg:text-2xl xl:text-3xl font-bold text-center mb-6 lg:mb-8 xl:mb-10 capitalize"
                 variants={fadeInUp}
               >
                 {category} Development
               </motion.h3>
               <motion.div 
-                className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6"
+                className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4 lg:gap-6 xl:gap-8"
                 variants={staggerContainer}
               >
                 {skills.map((skill, index) => (
@@ -457,21 +480,21 @@ function App() {
                     whileHover={{ scale: 1.05, y: -5 }}
                     transition={{ duration: 0.3 }}
                   >
-                    <Card className="text-center hover:shadow-lg transition-all duration-300 cursor-pointer group">
-                      <CardContent className="pt-6">
-                        <div className="flex flex-col items-center space-y-3">
+                    <Card className="text-center hover:shadow-lg transition-all duration-300 cursor-pointer group h-full">
+                      <CardContent className="pt-4 pb-4 px-3 lg:pt-6 lg:pb-6 lg:px-4">
+                        <div className="flex flex-col items-center space-y-2 lg:space-y-3">
                           {skill.logo ? (
                             <motion.img 
                               src={skill.logo} 
                               alt={`${skill.name} Logo`} 
-                              className="h-12 w-12 object-contain group-hover:scale-110 transition-transform duration-300" 
+                              className="h-10 w-10 lg:h-12 lg:w-12 xl:h-14 xl:w-14 object-contain group-hover:scale-110 transition-transform duration-300" 
                             />
                           ) : (
-                            <div className="h-12 w-12 flex items-center justify-center bg-primary/10 rounded-full group-hover:bg-primary/20 transition-colors">
-                              <span className="text-primary text-lg font-bold">{skill.name.charAt(0)}</span>
+                            <div className="h-10 w-10 lg:h-12 lg:w-12 xl:h-14 xl:w-14 flex items-center justify-center bg-primary/10 rounded-full group-hover:bg-primary/20 transition-colors">
+                              <span className="text-primary text-sm lg:text-lg font-bold">{skill.name.charAt(0)}</span>
                             </div>
                           )}
-                          <h3 className="font-medium text-sm">{skill.name}</h3>
+                          <h3 className="font-medium text-xs lg:text-sm xl:text-base leading-tight">{skill.name}</h3>
                         </div>
                       </CardContent>
                     </Card>
@@ -539,9 +562,9 @@ function App() {
                       </div>
                       <div className="flex gap-2">
                         <Button 
-                          variant="outline" 
+                          variant="default" 
                           size="sm" 
-                          className="hover:scale-105 transition-transform duration-300"
+                          className="bg-primary text-primary-foreground hover:bg-primary/90 hover:scale-105 transition-transform duration-300 cursor-pointer"
                           onClick={() => window.open(project.liveDemo, '_blank')}
                         >
                           <ExternalLink className="h-4 w-4 mr-2" />
@@ -550,7 +573,7 @@ function App() {
                         <Button 
                           variant="outline" 
                           size="sm" 
-                          className="hover:scale-105 transition-transform duration-300"
+                          className="border-primary text-primary hover:bg-primary/10 hover:scale-105 transition-transform duration-300 cursor-pointer"
                           onClick={() => window.open(project.github, '_blank')}
                         >
                           <Github className="h-4 w-4 mr-2" />
@@ -727,7 +750,7 @@ function App() {
                     </div>
                     <Button 
                       type="submit" 
-                      className="w-full hover:scale-105 transition-transform duration-300"
+                      className="w-full bg-primary text-primary-foreground hover:bg-primary/90 hover:scale-105 transition-transform duration-300 cursor-pointer"
                       disabled={isSubmitting}
                     >
                       {isSubmitting ? 'Sending...' : 'Send Message'}
@@ -751,7 +774,7 @@ function App() {
             variants={fadeInUp}
           >
             <p className="text-muted-foreground">
-              © 2025 Bernard Obura. Built with React and Tailwind CSS.
+              © {new Date().getFullYear()} Bernard Obura. All Rights Reserved.
             </p>
           </motion.div>
         </div>
@@ -761,4 +784,5 @@ function App() {
 }
 
 export default App
+
 
