@@ -234,7 +234,7 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ---
 
-**Live Website**: https://mqfwinym.manus.space
+**Live Website**:https://bernardobura.vercel.app/
 
 Built with ❤️ by Bernard Obura
 
